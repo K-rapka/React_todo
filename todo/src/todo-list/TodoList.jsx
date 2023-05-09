@@ -2,7 +2,10 @@ import React from "react";
 import ListItem from "./list-item/ListItem";
 const TodoList = ()=>{
     return(
-        <ul>
+        <ul className="list">
+            <ListItem/>
+            <ListItem/>
+            <ListItem/>
             <ListItem/>
         </ul>
     )

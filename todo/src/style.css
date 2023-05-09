@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    background-color: #3F72AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#root{
+    background-color: #F9F7F7;
+    width: 35vw;
+    height: 70vh;
+    border-radius: 20px;
+    padding: 15px;
+}
+.addBar{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #111;
+    display: flex;
+    justify-content: center;
+}
+
+.addBar input{
+    background-color: #DBE2EF;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+.addBar button{
+    border-radius: 0px 5px 5px 0px;
+    background-color: #AAAAAA;
+    color: #fff;
+
+}
+.addBar input,.addBar button{
+    border: none; 
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #B1B1B1;
+}
+.list{
+    list-style-type: none;
+    padding: 0px;
+}
+.listItem{
+    background-color: #DBE2EF;
+    border-radius: 5px;
+    height: 40px;
+    margin: 15px 0px 15px 0px;
+    align-items: center;
+    display: flex;
+}
