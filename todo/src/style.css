@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-body{
+body {
     width: 100vw;
     margin: 0px;
     padding-top: 5%;
@@ -10,31 +10,35 @@ body{
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
 }
-#root{
+
+#root {
     background-color: #F9F7F7;
     width: 35vw;
     border-radius: 20px;
     padding: 15px;
 }
-@media (max-width: 1024px){
-    #root{
+
+@media (max-width: 1024px) {
+    #root {
         width: 80vw;
     }
 }
-h1{
+
+h1 {
     margin: 5px;
     display: flex;
     justify-content: center;
     user-select: none;
 }
-.addBar{
+
+.addBar {
     padding-bottom: 10px;
     border-bottom: 1px solid #111;
     display: flex;
     justify-content: center;
 }
 
-.addBar input{
+.addBar input {
     background-color: #DBE2EF;
     margin: 0px;
     padding: 0px;
@@ -43,31 +47,39 @@ h1{
     font-family: 'Josefin Sans', sans-serif;
     width: 12em;
 }
-.addBar button{
+
+.addBar button {
     border-radius: 0px 5px 5px 0px;
     background-color: #AAAAAA;
     color: #fff;
     font-size: 1.5em;
 
 }
-.addBar input,.addBar button{
-    border: none; 
+
+.addBar input,
+.addBar button {
+    border: none;
     padding: 8px;
     cursor: pointer;
     border: 1px solid #B1B1B1;
     transition: 0.5s;
+    user-select: none;
 }
-.addBar input:hover{
+
+.addBar input:hover {
     background-color: #b8ccf1;
 }
-.addBar button:hover{
+
+.addBar button:hover {
     background-color: #848383;
 }
-.list{
+
+.list {
     list-style-type: none;
     padding: 0px;
 }
-.listItem{
+
+.listItem {
     background-color: #DBE2EF;
     border-radius: 5px;
     min-height: 40px;
@@ -76,13 +88,26 @@ h1{
     align-items: center;
     display: flex;
     justify-content: space-between;
+    transition: 0.5s;
+
 }
-.listItem span{
+.listItem:hover {
+    background-color: #b8ccf1;
+}
+
+.listItem span {
     width: 90%;
     word-wrap: break-word;
     font-size: 1.4em;
 }
-.listItem input{
-    width:3vw ;
+
+.listItem input {
+    width: 3vw;
     height: 3vh;
+    cursor: pointer;
+}
+.empty{
+    display: flex;
+    justify-content: center;
+    user-select: none;
 }
