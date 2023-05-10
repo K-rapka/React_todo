@@ -7,6 +7,9 @@ const TodoList = ()=>{
             <ListItem/>
             <ListItem/>
             <ListItem/>
+            <ListItem/>
+            <ListItem/>
+            <ListItem/>
         </ul>
     )
 }

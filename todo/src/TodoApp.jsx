@@ -6,7 +6,7 @@ import TodoList from './todo-list/TodoList'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <div>
-        <div>To Do App</div>
+        <h1>To Do App</h1>
         <AddBar/>
         <TodoList/>
     </div>
