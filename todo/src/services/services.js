@@ -18,9 +18,10 @@ export const updateStorage = (value) =>{
     }
     else{
         let arr = getStorage()
+        console.log(arr[arr.length - 1]);
         let newArr = [...arr, {
             text:value,
-            id: (arr.length + 1),
+            id: arr.length,
             complete: false
         }]
         localStorage.setItem('tasks',JSON.stringify(newArr))
