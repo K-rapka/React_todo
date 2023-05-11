@@ -12,7 +12,7 @@ const TodoApp = ()=>{
         <div>
             <h1>To Do App</h1>
             <AddBar getUpdate = {getUpdate} updateStatus = {update}/>
-            <TodoList/>
+            <TodoList getUpdate = {getUpdate} updateStatus = {update}/>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { updateStorage } from "../services/services";
+import { addItemStorage } from "../services/services";
 
 
 const AddBar = ({getUpdate, updateStatus}) => {
@@ -9,7 +9,7 @@ const AddBar = ({getUpdate, updateStatus}) => {
             return
         }
         getUpdate(!updateStatus)
-        updateStorage(task)
+        addItemStorage(task)
         setTask('')
     }
 

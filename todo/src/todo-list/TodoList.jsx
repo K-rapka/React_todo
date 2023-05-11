@@ -1,11 +1,13 @@
 import React from "react";
-import { getStorage } from "../services/services";
+import { getStorage, updateCompleteStatus, deleteTask } from "../services/services";
 
 
-const TodoList = () => {
+const TodoList = ({getUpdate,updateStatus}) => {
     let tasks = getStorage()
 
-    if (tasks === null) {
+
+
+    if (tasks === null || tasks.length == 0) {
         return (
             <ul className="list">
                 <li className="empty">No tasks</li>
@@ -13,10 +15,14 @@ const TodoList = () => {
         )
     }
     else {
-        let elemTasks = tasks.map((task)=>{
-            return(<li key={task.id} className="listItem">
+        let elemTasks = tasks.map((task) => {
+            return (<li key={task.id} className="listItem">
                 <span>{task.text}</span>
-                <input type="checkbox" defaultChecked={task.complete}/>
+                <input type="checkbox" defaultChecked={task.complete} onClick={() => updateCompleteStatus(task.id)} />
+                <button onClick={() => {
+                    getUpdate(!updateStatus)
+                    deleteTask(task.id)
+                }}></button>
             </li>)
         })
         return (
